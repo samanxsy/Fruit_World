@@ -1,0 +1,176 @@
+body{
+  background-color: rgb(31, 40, 43);
+  color: rgb(253, 247, 240);
+}
+
+p{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.buttons{
+  display: inline-block;
+  margin-left: 50px;
+  min-width: 1000px;
+}
+
+button{
+  background-color: #578f97;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(253, 247, 240) ;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 110px;
+  margin-left: 3px;
+  transition: 0.2s;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 30);
+}
+
+button:hover{
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:active{
+  background-color: rgb(253, 247, 240);
+  color: #578f97;
+}
+
+
+
+.fruit_data{
+  display: inline;
+  margin-left: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.fruit_mix{
+  display: inline;
+  margin-left: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.information{
+  margin-top: 30px;
+}
+
+table {
+  border-radius: 4px;
+  border-collapse: none;
+  border: none;
+}
+th, td {
+  border-radius: 4px;
+  padding: 8px;
+  text-align: left;
+  border: none;
+}
+th {
+  background-color: #578f97;
+}
+
+td {
+  background-color: rgb(253, 247, 240);
+  color: #578f97;
+  font-weight: bold;
+}
+
+.info_table{
+width: 50%;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 40px;
+margin-left: 50px;
+}
+.ntr_table{
+width: 80%;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 80px;
+margin-left: 50px;
+}
+
+.mix_table{
+width: 80%;
+font-family: Arial, Helvetica, sans-serif;
+margin-bottom: 80px;
+margin-left: 50px;
+}
+
+.Tap{
+margin-left: 50px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+text-align: left;
+}
+
+.about{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+text-align: left;
+margin-left: 50px;
+margin-bottom: 10px;
+}
+
+.ntr_facts{
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+text-align: left;
+margin-left: 50px;
+margin-bottom: 10px;
+}
+
+.mix{
+text-align: left;
+margin-left: 50px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+margin-bottom: 10px;   
+}
+
+.reset{
+margin-left: 50px;
+margin-top: 10px;
+width: 250px;
+}
+
+.sort{
+display: inline;
+padding-left: 50px;
+font-weight: bold;
+}
+
+.submit{
+display: inline;
+background-color: rgb(238, 238, 203);
+width: 60px;
+padding-top: 3px;
+padding-bottom: 3px;
+color: black;
+}
+
+.options{
+margin-top: 5px;
+margin-left: 50px;
+background-color: rgb(238, 238, 203);
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+box-shadow: 1px 1px 4px rgba(0, 0, 0, 30);
+border-radius: 4px;
+padding-top: 1px;
+padding-bottom: 1px;
+}

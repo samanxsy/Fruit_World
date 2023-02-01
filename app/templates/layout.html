@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fruit World</title>
+    <link rel="stylesheet" type="text/css" href="/app/static/styles.css">
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+  </head>
+
+  <body>
+    <h3>Welcome to Fruit World!</h3>
+    <p class="Tap">Fruits</p>
+
+    <div class="buttons">
+      <div class="first_row"> 
+      <form method="get" action="/fruits"> 
+        <button name="fruit" value="Apple">Apple</button>
+        <button name="fruit" value="Apricot">Apricot</button>
+        <button name="fruit" value="Avocado">Avocado</button>
+        <button name="fruit" value="Banana">Banana</button>
+        <button name="fruit" value="Blackberry">Blackberry</button>
+        <button name="fruit" value="Blueberry">Blueberry</button>
+        <button name="fruit" value="Cherry">Cherry</button>
+        <button name="fruit" value="Cranberry">Cranberry</button>
+      </div>
+      <div class="second_row"> 
+        <button name="fruit" value="Dragonfruit">Dragonfruit</button>
+        <button name="fruit" value="Durian">Durian</button>
+        <button name="fruit" value="Feijoa">Feijoa</button>
+        <button name="fruit" value="Fig">Fig</button>
+        <button name="fruit" value="Gooseberry">Gooseberry</button>
+        <button name="fruit" value="Grape">Grape</button>
+        <button name="fruit" value="GreenApple">GreenApple</button>
+        <button name="fruit" value="Guava">Guava</button>
+      </div>
+      <div class="third_row"> 
+        <button name="fruit" value="Kiwi">Kiwi</button>
+        <button name="fruit" value="Lemon">Lemon</button>
+        <button name="fruit" value="Lime">Lime</button>
+        <button name="fruit" value="Lingonberry">Lingonberry</button>
+        <button name="fruit" value="Lychee">Lychee</button>
+        <button name="fruit" value="Mango">Mango</button>
+        <button name="fruit" value="Melon">Melon</button>
+        <button name="fruit" value="Morus">Morus</button>
+      </div>
+      <div class="forth_row">
+        <button name="fruit" value="Orange">Orange</button>
+        <button name="fruit" value="Papaya">Papaya</button>
+        <button name="fruit" value="Passionfruit">Passionfruit</button>
+        <button name="fruit" value="Peach">Peach</button>
+        <button name="fruit" value="Pear">Pear</button>
+        <button name="fruit" value="Persimmon">Persimmon</button>
+        <button name="fruit" value="Pineapple">Pineapple</button>
+        <button name="fruit" value="Pitahaya">Pitahaya</button>
+      </div>
+      <div class="fifth_row"> 
+        <button name="fruit" value="Plum">Plum</button>
+        <button name="fruit" value="Pomegranate">Pomegranate</button>
+        <button name="fruit" value="Raspberry">Raspberry</button>
+        <button name="fruit" value="Strawberry">Strawberry</button>
+        <button name="fruit" value="Tangerine">Tangerine</button>
+        <button name="fruit" value="Tomato">Tomato</button>
+        <button name="fruit" value="Watermelon">Watermelon</button>
+      </div>
+    </form>
+    </div>
+      <div class="fruit_data">
+        <p class="Tap">Tap a fruit!</p>
+      </div>
+      <div class="sorting"> 
+        <p class="sort">Sort by</p>
+       <form method="get" action="/re_sort"> 
+        <input type="hidden" name="fruit" value="">
+        <select class="options" name="sorting_type">
+          <option value="Normal">Normal</option>
+          <option value="Protein">Protein</option>
+          <option value="Carbohydrates">Carbohydrates</option>
+          <option value="Sugar">Sugar</option>
+          <option value="Calories">Calories</option>
+          <option value="Fat">Fat</option>
+        </select>
+        <button class="submit" type="submit">submit</button>
+      </form>
+
+      <p class="about">Tap more fruits!</p>
+
+      <button class="reset" type="submit" name="reset" value="True" onClick="location.href='/reset'">Reset</button>
+  </body>
+</html>

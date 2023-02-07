@@ -25,6 +25,10 @@ These instructions will get you a copy of the project to run it on your local ma
 - Flask - Web framework
 - Pandas
 
+### app view
+
+![Fruitworld](https://user-images.githubusercontent.com/118216325/217236716-7c26945f-65eb-42c0-836c-5e464d63ddcd.png)
+
 ### Containerization
 - If you want to run the application in a container, follow these steps: 
 - If you don't have docker installed visit: <https://www.docker.com/>

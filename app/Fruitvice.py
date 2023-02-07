@@ -64,7 +64,6 @@ def sorting(*fruits, nutrition=None):
     ntr = data['nutritions']
     fruit_table.append({'Name': data['name'], 'Carbohydrates': ntr['carbohydrates'], 'Protein': ntr['protein'], 'Fat': ntr['fat'], 'Calories': ntr['calories'], 'Sugar': ntr['sugar']})
 
-      
   df3 = pd.DataFrame(fruit_table)
   if nutrition:
     df3 = df3.sort_values(by=nutrition, ascending=False)

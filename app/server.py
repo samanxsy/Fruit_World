@@ -1,5 +1,5 @@
 from flask import Flask, request
-import Fruitvice
+import app.service as service
 
 fruit_list = []
 
@@ -17,7 +17,7 @@ def home():
   page = f.read()
   f.close()
 
-  fruit_info = Fruitvice.fruits_data("Apple")
+  fruit_info = service.fruits_data("Apple")
   page = page.replace("Tap a fruit!", fruit_info)
 
   return page
@@ -39,8 +39,8 @@ def fruits():
   if fruit not in fruit_list:
     fruit_list.append(fruit)
 
-  fruit_info = Fruitvice.fruits_data(fruit)
-  mix_fruits = Fruitvice.fruit_mix(*fruit_list)
+  fruit_info = service.fruits_data(fruit)
+  mix_fruits = service.fruit_mix(*fruit_list)
 
   page = page.replace("Tap a fruit!", fruit_info)
   page = page.replace("Tap more fruits!", mix_fruits)
@@ -60,34 +60,34 @@ def re_sort():
   f.close()
 
   sort_type = request.args.get("sorting_type")
-  mix_fruits = Fruitvice.fruit_mix(*fruit_list)
+  mix_fruits = service.fruit_mix(*fruit_list)
   fruit = fruit_list[1]
-  fruit_info = Fruitvice.fruits_data(fruit)
+  fruit_info = service.fruits_data(fruit)
 
   if sort_type == "Protein":
-    sort_table = Fruitvice.sorting(*fruit_list, nutrition="Protein")
+    sort_table = service.sorting(*fruit_list, nutrition="Protein")
     page = page.replace("Tap more fruits!", sort_table)
 
   elif sort_type == "Sugar": 
-    sort_table = Fruitvice.sorting(*fruit_list, nutrition="Sugar")
+    sort_table = service.sorting(*fruit_list, nutrition="Sugar")
 
     page = page.replace("Tap a fruit!", fruit_info)
     page = page.replace("Tap more fruits!", sort_table)
 
   elif sort_type == "Carbohydrates": 
-    sort_table = Fruitvice.sorting(*fruit_list, nutrition="Carbohydrates")
+    sort_table = service.sorting(*fruit_list, nutrition="Carbohydrates")
 
     page = page.replace("Tap a fruit!", fruit_info)
     page = page.replace("Tap more fruits!", sort_table)
 
   elif sort_type == "Calories":
-    sort_table = Fruitvice.sorting(*fruit_list, nutrition="Calories")
+    sort_table = service.sorting(*fruit_list, nutrition="Calories")
 
     page = page.replace("Tap a fruit!", fruit_info)
     page = page.replace("Tap more fruits!", sort_table)
 
   elif sort_type == "Fat": 
-    sort_table = Fruitvice.sorting(*fruit_list, nutrition="Fat")
+    sort_table = service.sorting(*fruit_list, nutrition="Fat")
 
     page = page.replace("Tap a fruit!", fruit_info)
     page = page.replace("Tap more fruits!", sort_table)
